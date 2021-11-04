@@ -2,18 +2,22 @@ package functionalinterface;
 
 import java.util.Locale;
 import java.util.function.Predicate;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 // utilisation d'un Predicate pour verifier 1 arguments result boolean
 public class _Predicate {
 
+    static Logger logger = Logger.getLogger(_Predicate.class.getName());
+
     public static void main(String[] args) {
 
         boolean isEmptyValue = verificationValeur("Albert");
-        System.out.println(isEmptyValue);
+
+        logger.log(Level.INFO, String.valueOf(isEmptyValue));
 
         boolean isOtherValue = VerificationValeurPredicate.test("alpha".toUpperCase(Locale.ROOT));
-        System.out.println(isOtherValue);
+        logger.log(Level.INFO,String.valueOf(isOtherValue));
 
     }
 
@@ -23,10 +27,6 @@ public class _Predicate {
 
     static Predicate<String> VerificationValeurPredicate = value-> (value.startsWith("A") && value.length()>4);
     static boolean verificationValeur(String value) {
-
-        if (value.startsWith("A") && value.length()>4) {
-            return true;
-        }
-        return false;
+        return value.startsWith("A") && value.length() > 4;
     }
 }
