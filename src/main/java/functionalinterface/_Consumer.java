@@ -28,7 +28,7 @@ static   Consumer<Personn> infoCustomerConsumer =
         customer-> System.out.println("Bienvenu(e) " + customer.name + " vous avez l'age autoriser : " +
                 customer.age + " years");
 
-
+    // Accept 2 arguments and return void
     static BiConsumer<Personn,Boolean> infoCustomerBiConsumer =
             (customer,isAge)-> System.out.println("Bienvenue "
             + customer.name + " your age is "
