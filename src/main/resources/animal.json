@@ -1,0 +1,67 @@
+
+[
+  {
+  
+  "id":1,
+  "race":"felin",
+  "name":"tiger",
+  "power":50,
+  "country":"Asia"
+  
+},
+{
+  
+  "id":2,
+  "race":"felin",
+  "name":"lion",
+  "power":80,
+  "country":"Africa"
+  
+},
+{
+  
+  "id":3,
+  "race":"felin",
+  "name":"chat",
+  "power":23,
+  "country":"Europe"
+  
+},
+{
+  
+  "id":4,
+  "race":"canider",
+  "name":"PittBull",
+  "power":35,
+  "country":"Usa"
+  
+},
+{
+  
+  "id":5,
+  "race":"canider",
+  "name":"Bouldogue",
+  "power":56,
+  "country":"Europe"
+  
+},
+{
+  
+  "id":6,
+  "race":"mammifer",
+  "name":"Elephant",
+  "power":100,
+  "country":"Africa"
+  
+},
+  {
+
+    "id":7,
+    "race":"mammifer",
+    "name":"Baleine",
+    "power":140,
+    "country":"Ocean Indien"
+
+  }
+
+  ]
