@@ -1,6 +1,7 @@
 package functionalinterface;
 
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 // Accept 1 arguments and return void
@@ -15,6 +16,7 @@ public class _Consumer {
 
             infoCustomerNormal(p2);
             infoCustomerConsumer.accept(p2);
+            infoCustomerBiConsumer.accept(p2,true);
     }
 
 static  void infoCustomerNormal(Personn personn){
@@ -25,6 +27,12 @@ static  void infoCustomerNormal(Personn personn){
 static   Consumer<Personn> infoCustomerConsumer =
         customer-> System.out.println("Bienvenu(e) " + customer.name + " vous avez l'age autoriser : " +
                 customer.age + " years");
+
+
+    static BiConsumer<Personn,Boolean> infoCustomerBiConsumer =
+            (customer,isAge)-> System.out.println("Bienvenue "
+            + customer.name + " your age is "
+            + (isAge ? customer.age + " years" : "***************"));
 
 
     static class  Personn{
