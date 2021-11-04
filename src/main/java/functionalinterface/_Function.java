@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 public class _Function {
 
-
+    // Function takes 1 arguments and produces 1 result
     public static void main(String[] args) {
 
         // cas 1
