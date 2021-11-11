@@ -16,6 +16,8 @@ public class _Predicate {
 
         logger.log(Level.INFO, String.valueOf(isEmptyValue));
 
+
+        logger.log(Level.INFO,"-----PREDICATE RESULT----- ");
         boolean isOtherValue = VerificationValeurPredicate.test("alpha".toUpperCase(Locale.ROOT));
         logger.log(Level.INFO,String.valueOf(isOtherValue));
 
@@ -25,7 +27,7 @@ public class _Predicate {
 
 
 
-    static Predicate<String> VerificationValeurPredicate = value-> (value.startsWith("A") && value.length()>4);
+    static Predicate<String> VerificationValeurPredicate = value-> (value.startsWith("B") && value.length()>4);
     static boolean verificationValeur(String value) {
         return value.startsWith("A") && value.length() > 4;
     }
